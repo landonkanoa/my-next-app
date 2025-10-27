@@ -1,18 +1,20 @@
 'use client';
 import { useState } from 'react';
 
-export default function Counter() {
-    const [count, setCount] = useState(0);
+export default function Counter({ initialCount = 0, initialStep = 1 }) {
+    const [count, setCount] = useState(initialCount);
+    const [step, setStep] = useState(initialStep)
 
     return (
         <div>
             <p> Current Count: {count}</p>
-            <button onClick={() => setCount(count + 1)}>Add Sale</button> 
+            <button onClick={() => setCount(count + step)}>Add Sale</button> 
             <br></br>
-            <button onClick={() => setCount(count - 1)}>Decrease Sale</button>
+            <button onClick={() => setCount(count - step)}>Decrease Sale</button>
             <br></br>
             <button onClick={() => setCount(0)}>Reset Sale</button> 
-            <br></br>          
+            <br></br>
+            <input type="number" value={step} onChange={(s) => setStep(Number(s.target.value))} data-np-intersection-state="observed" ></input>          
         </div>
     );
 }
