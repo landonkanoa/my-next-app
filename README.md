@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). We worked on this in class so I just used the same file as before this is just a demo of an app with buttons that can be used and changed by the user.
 
 ## Getting Started
 
@@ -34,3 +34,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Features of my app
+
+Counter with increase, decrease, and reset that can change based off the step value.
+
+## Limits
+
+I mean this webpage looks bad I mean cmon random buttons on a black background nothing really going on. I couldnt get the decrease button to change when at 0 so theres no visual cue to when it is disabled. The layout could just be much better.
